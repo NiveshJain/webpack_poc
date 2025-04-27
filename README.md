@@ -4,4 +4,4 @@ This is a simple web app showing usage of webpack 5.
 
 ## Tech used:
 
-HTML, CSS , SASS , ES5 , Webpack
+HTML, CSS , SASS , Javascript, Webpack

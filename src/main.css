@@ -1,0 +1,17 @@
+body {
+  margin: 0px;
+  height: 100vh;
+  width: 100vw;
+}
+
+.img-container {
+  height: 100%;
+  width: 100%;
+  background-image: url("universe.jpg");
+  background-size: cover;
+}
+
+.img-info {
+  position: absolute;
+  bottom: 0;
+}
