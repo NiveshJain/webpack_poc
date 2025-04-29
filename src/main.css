@@ -1,3 +1,7 @@
+:root {
+  --star-shadow: 0px 0px 5px 5px white;
+}
+
 body {
   margin: 0px;
   height: 100vh;
@@ -9,9 +13,55 @@ body {
   width: 100%;
   background-image: url("universe.jpg");
   background-size: cover;
+  position: relative;
 }
 
 .img-info {
   position: absolute;
   bottom: 0;
+}
+
+.blinking-star {
+  opacity: 0;
+  background-color: white;
+  animation: blinking 4s;
+  border-radius: 50%;
+  height: 5px;
+  width: 5px;
+  box-shadow: var(--star-shadow);
+}
+
+@keyframes blinking {
+  from {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.2;
+  }
+
+  20% {
+    opacity: 0.4;
+  }
+
+  30% {
+    opacity: 0.6;
+  }
+
+  40% {
+    opacity: 0.8;
+  }
+
+  60% {
+    opacity: 0.6;
+    box-shadow: 0px 0px 8px 10px white;
+  }
+
+  80% {
+    opacity: 0.2;
+  }
+
+  to {
+    opacity: 0;
+  }
 }
