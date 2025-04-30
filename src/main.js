@@ -12,12 +12,6 @@ window.addEventListener("load", function () {
   }, 5000);
 });
 
-function getRandomPointInTheUniverse(left, top, bottom, right) {
-  const x = Math.random() * (right - left) + left;
-  const y = Math.random() * (bottom - top) + top;
-  return [x, y];
-}
-
 function getMesmerizedAt(x, y) {
   removePreviousIfAny();
   const div = document.createElement("div");
