@@ -1,7 +1,8 @@
+// load function gets called when all resources of the page are loaded, dom, css , scripts etc.
 window.addEventListener("load", function () {
   const space = document.getElementsByClassName("img-container")[0];
   const boundingObj = space.getBoundingClientRect();
-  setInterval(() => {
+  id = setInterval(() => {
     const [x, y] = getRandomPointInTheUniverse(
       boundingObj.left,
       boundingObj.top,
@@ -10,19 +11,14 @@ window.addEventListener("load", function () {
     );
     getMesmerizedAt(x, y);
   }, 5000);
+  infoModal = new bootstrap.Modal("#infoModal");
+  infoModal.show();
 });
 
 function getMesmerizedAt(x, y) {
-  removePreviousIfAny();
-  const div = document.createElement("div");
-  div.style.top = y + "px";
-  div.style.left = x + "px";
-  div.style.position = "absolute";
-  div.className = "blinking-star";
+  const star = getExplodingStarElement();
+  star.style.top = y + "px";
+  star.style.left = x + "px";
   const space = document.getElementsByClassName("img-container")[0];
-  space.appendChild(div);
-}
-
-function removePreviousIfAny() {
-  document.getElementsByClassName("blinking-star")[0]?.remove();
+  space.appendChild(star);
 }

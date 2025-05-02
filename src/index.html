@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>The Universe</title>
+    <link rel="stylesheet" href="./vendor/bootstrap.min.css" />
     <link rel="stylesheet" href="main.css" />
   </head>
 
@@ -20,6 +21,36 @@
         >
       </div>
     </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="infoModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Something happening in the Universe &#128559;
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Try to capture a star explosion by clicking on it. Once it's
+            captured , it will stop other stars from exploding.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal end -->
+    <script src="./vendor/bootstrap.bundle.min.js"></script>
     <script src="utility.js"></script>
     <script src="main.js"></script>
   </body>
