@@ -1,7 +1,7 @@
 # Webpack demo app
 
-This is a simple web page showing usage of webpack 5, and depicts the journey of evolution of front-end development via its commits.
+This is a simple web page with a fun game, the commits of this codebase depicts the journey of front-end development evolution.
 
 ## Tech used:
 
-HTML, CSS , SASS , Javascript, Webpack 5
+HTML, CSS, Javascript, Webpack 5
