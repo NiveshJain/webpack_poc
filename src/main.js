@@ -3,6 +3,7 @@ import * as utility from "./utility.js";
 import * as bootstrap from "bootstrap";
 
 let id;
+
 // load function gets called when all resources of the page are loaded, dom, css , scripts etc.
 window.addEventListener("load", function () {
   const space = document.getElementsByClassName("img-container")[0];
