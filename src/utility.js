@@ -4,7 +4,7 @@ function getRandomPointInTheUniverse(left, top, bottom, right) {
   return [x, y];
 }
 
-function getExplodingStarElement() {
+function getExplodingStarElement(id) {
   let star;
   if (document.contains(document.querySelector(".blinking-star"))) {
     return document.querySelector(".blinking-star");
@@ -23,3 +23,5 @@ function getExplodingStarElement() {
   }
   return star;
 }
+
+export { getRandomPointInTheUniverse, getExplodingStarElement };
