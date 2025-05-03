@@ -1,3 +1,5 @@
+import * as bootstrap from "bootstrap";
+
 function getRandomPointInTheUniverse(left, top, bottom, right) {
   const x = Math.random() * (right - left) + left;
   const y = Math.random() * (bottom - top) + top;
@@ -14,7 +16,7 @@ function getExplodingStarElement(id) {
     star.className = "blinking-star";
     star.addEventListener("click", function (event) {
       clearInterval(id);
-      infoModal = new bootstrap.Modal("#infoModal");
+      const infoModal = new bootstrap.Modal("#infoModal");
       document.querySelector(".modal-title").textContent = "Fun fact";
       document.querySelector(".modal-body").textContent =
         "An exploding star (Supernova) can be incredibly bright, outshining an entire galaxy for a period of time";

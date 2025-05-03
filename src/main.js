@@ -1,5 +1,7 @@
 import "./main.css";
 import * as utility from "./utility.js";
+import * as bootstrap from "bootstrap";
+
 let id;
 // load function gets called when all resources of the page are loaded, dom, css , scripts etc.
 window.addEventListener("load", function () {
@@ -14,7 +16,7 @@ window.addEventListener("load", function () {
     );
     getMesmerizedAt(x, y);
   }, 5000);
-  infoModal = new bootstrap.Modal("#infoModal");
+  const infoModal = new bootstrap.Modal("#infoModal");
   infoModal.show();
 });
 
