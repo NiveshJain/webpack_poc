@@ -4,7 +4,8 @@
   "description": "This is a simple web app showing usage of webpack 5.",
   "main": "main.js",
   "scripts": {
-    "build": "webpack --config webpack.config.js"
+    "start": "webpack-dev-server --config webpack.dev.js --open",
+    "build": "webpack --config webpack.prod.js"
   },
   "repository": {
     "type": "git",
