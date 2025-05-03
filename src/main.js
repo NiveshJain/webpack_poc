@@ -1,3 +1,4 @@
+import "./main.css";
 import * as utility from "./utility.js";
 let id;
 // load function gets called when all resources of the page are loaded, dom, css , scripts etc.

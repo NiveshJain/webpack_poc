@@ -3,4 +3,13 @@ module.exports = {
   entry: {
     main: "./src/main.js",
   },
+
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
+      },
+    ],
+  },
 };
